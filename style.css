@@ -1,0 +1,79 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #d0e8f2, #f9f9f9);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header section */
+header {
+  background-color: #004d99;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+/* Content sections */
+section {
+  background: white;
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  color: #004d99;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+section p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Image styling */
+img {
+  display: block;
+  margin: 20px auto;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 5px solid #004d99;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #f1f1f1;
+  padding: 15px;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 40px;
+  border-top: 2px solid #ddd;
+}
+img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+

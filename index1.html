@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="UTF-8">
+  <title>Class Test Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>@keyframes pulseColor {
+  0% { color: red; }
+  25% { color: orange; }
+  50% { color: green; }
+  75% { color: blue; }
+  100% { color: violet; }
+}
+
+.color-pulse {
+  animation: pulseColor 4s infinite;
+  font-weight: bold;
+}
+
+    /* === General Styling === */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #d0e8f2, #f9f9f9);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #004d99;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    section {
+      max-width: 800px;
+      background: white;
+      margin: 30px auto;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #004d99;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    img {
+      display: block;
+      margin: 20px auto;
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 5px solid #004d99;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      text-align: center;
+      background: #f1f1f1;
+      padding: 15px;
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 40px;
+      border-top: 2px solid #ddd;
+    }
+
+    /* === Quiz Styling === */
+    .quiz label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .quiz button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #004d99;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .quiz button:hover {
+      background-color: #003366;
+    }
+
+    #result {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    /* === Animations === */
+
+    .fade-in {
+      animation: fadeIn 2s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .slide-left {
+      animation: slideLeft 1.5s ease-out;
+    }
+
+    @keyframes slideLeft {
+      from { transform: translateX(-100px); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+
+    .bounce {
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .rainbow-text {
+      background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
+      background-size: 200% auto;
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      animation: rainbow 3s linear infinite;
+    }
+
+    @keyframes rainbow {
+      0% { background-position: 0% center; }
+      100% { background-position: 200% center; }
+    }
+  </style>
+<section class="fade-in" style="text-align: center; margin-top: 30px;">
+  <i class="fas fa-users fa-4x" style="color: #17a2b8; animation: bounce 2s infinite;"></i>
+  <p class="color-pulse">Made for everyone to learn & grow!</p>
+</section>
+</head>
+<body>
+
+  <header class="fade-in">
+    <h1 class="rainbow-text">{NORMY_CODER}</h1>
+    <p><span style="color:darkorange;">WELCOME TO MY TEST WEBSITE - (NORMY_CODER) !</span></p>
+  </header>
+
+  <section class="about slide-left">
+    <h2>About Me</h2>
+    <section class="profile-section fade-in">
+  <h2><i class="fas fa-user-circle" style="color:#007bff;"></i> Profile</h2>
+  <p><span style="color: #ff6347;">Name:</span> normy_coder</p>
+  <p><span style="color: #32cd32;">studing:</span> iit madras </p>
+  <p><span style="color: #ffa500;">Subject:</span> Data Science</p>
+</section>
+
+<section class="history-section slide-left">
+  <h2><i class="fas fa-history" style="color: #ff1493;"></i> History</h2>
+  <p><span style="color: #8a2be2;">Visited:</span> 3 Times</p>
+  <p><span style="color: #20b2aa;">Last Test Taken:</span> 2 days ago</p>
+</section>
+
+    <p>
+      <span style="color: crimson;">I</span> 
+      <span style="color: teal;">am</span> 
+      <span style="color: orange;">Your Science and Code Guru AMARJEET KUMAR</span> 
+      <span style="color: green;">I AM A STUDENT OF IIT MADRAS</span> 
+      <span style="color: purple;">learning how</span> 
+      <span style="color: rgb(11, 0, 128);">to WORK WITH DATA STRUCTURES</span>
+    </p>
+    <img src="https://i.postimg.cc/j547Hvnd/NORMY.jpg" alt="NORMY_CODER" class="bounce">
+  </section>
+
+  <section class="contact fade-in">
+    <h2>Contact</h2>
+    <p><i class="fas fa-envelope"></i> Email: <span style="color:blue;">amarjeetbilla63@school.com</span></p>
+ </section>
+
+  <section class="quiz fade-in">
+    <h2 class="rainbow-text">Take the Test</h2>
+    <form id="quizForm">
+      <p>1. Is this website is looks good?</p>
+      <label><input type="radio" name="q1" value="a"> Amazing and looks great</label>
+      <label><input type="radio" name="q1" value="b"> nice but not great</label>
+      <label><input type="radio" name="q1" value="c"> some animation are need to improve</label>
+
+      <p>2. What is used to style a web page?</p>
+      <label><input type="radio" name="q2" value="a"> Java</label>
+      <label><input type="radio" name="q2" value="b"> HTML</label>
+      <label><input type="radio" name="q2" value="c"> CSS</label>
+
+      <p>3. What does JS stand for?</p>
+      <label><input type="radio" name="q3" value="a"> JavaScript</label>
+      <label><input type="radio" name="q3" value="b"> JavaStyle</label>
+      <label><input type="radio" name="q3" value="c"> JustScript</label>
+
+      <br><br>
+      <button type="button" onclick="checkAnswers()">Submit Test</button>
+    </form>
+
+    <p id="result"></p>
+  </section>
+
+  <footer>
+    <p>© 2025 NORMY_CODER - Class Test & Project</p>
+  </footer>
+
+  <script>
+    function checkAnswers() {
+      let score = 0;
+
+      const q1 = document.querySelector('input[name="q1"]:checked');
+      const q2 = document.querySelector('input[name="q2"]:checked');
+      const q3 = document.querySelector('input[name="q3"]:checked');
+
+      if (q1 && q1.value === 'a') score++;
+      if (q2 && q2.value === 'c') score++;
+      if (q3 && q3.value === 'a') score++;
+
+      const result = document.getElementById("result");
+      result.textContent = "You scored " + score + " out of 3.";
+
+      if (score === 3) {
+        result.style.color = "green";
+      } else if (score === 2) {
+        result.style.color = "orange";
+      } else {
+        result.style.color = "red";
+      }
+    }
+  </script>
+
+<button onclick="scrollToTop()" id="topBtn" title="Go to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<style>
+  #topBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #004d99;
+    color: white;
+    cursor: pointer;
+    padding: 12px 15px;
+    border-radius: 50%;
+    display: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  }
+
+  #topBtn:hover {
+    background-color: #003366;
+  }
+</style>
+
+<script>
+  // Show button on scroll
+  window.onscroll = function () {
+    const btn = document.getElementById("topBtn");
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+
+  // Scroll to top
+  function scrollToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+</body>
+</html>
